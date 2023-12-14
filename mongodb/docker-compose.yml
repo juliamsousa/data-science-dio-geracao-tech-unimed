@@ -1,0 +1,14 @@
+version: '3'
+
+services: 
+  db: 
+    image: mongo
+    container_name: db
+    restart: always
+    environment: 
+    - MONGO_INITDB_ROOT_USERNAME=juliamsousa
+    - MONGO_INITDB_ROOT_PASSWORD=db_goldfit_2022*
+    ports:
+    - "27017:27017"
+    volumes:
+    - /Users/julia/Documents/GitHub
